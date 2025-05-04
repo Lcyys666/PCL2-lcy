@@ -79,7 +79,8 @@
                     PageOtherLeft.RefreshHelp()
 
                 Case "今日人品"
-                    PageOtherTest.Jrrp()
+                    Dim TestPage As New PageOtherTest()
+                    TestPage.Jrrp()
 
                 Case "内存优化"
                     RunInThread(Sub() PageOtherTest.MemoryOptimize(True))

@@ -7,6 +7,46 @@
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
     PanScroll="{Binding ElementName=PanBack}">
     <local:MyScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" x:Name="PanBack">
-        <TextBlock Text="为便于维护，开源内容中不包含百宝箱功能……" HorizontalAlignment="Center" FontSize="15" Height="30" VerticalAlignment="Center" />
+        <StackPanel Margin="25,10">
+            <local:MyCard Margin="0,15" Title="今日人品">
+                <StackPanel Margin="25,40,25,15">
+                    <local:MyCard Margin="0,0,0,15" Title="你的今日人品">
+                        <Grid Margin="15,35,15,15">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            
+                            <TextBlock Grid.Row="0" x:Name="TxtJrrpValue" Text="??" FontSize="40" HorizontalAlignment="Center"/>
+                            
+                            <Border Grid.Row="2" BorderThickness="0,1,0,0" BorderBrush="{DynamicResource ColorBrushBorder}" Margin="0,5,0,5"/>
+                            
+                            <TextBlock Grid.Row="4" x:Name="TxtJrrpHitokoto" Text="点击下方按钮来获取今日人品和一言" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                        </Grid>
+                    </local:MyCard>
+                    
+                    <Grid Height="35">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <local:MyButton Grid.Column="1" x:Name="BtnJrrp" MinWidth="140" Text="获取今日人品" Padding="13,0" HorizontalAlignment="Center"/>
+                    </Grid>
+                </StackPanel>
+            </local:MyCard>
+            
+            <local:MyCard Margin="0,15" Title="工具箱">
+                <StackPanel Margin="25,40,25,15">
+                    <StackPanel Orientation="Horizontal">
+                        <local:MyButton x:Name="BtnMemoryOptimize" MinWidth="140" Text="内存优化" Padding="13,0" Height="35" Margin="0,0,15,0"/>
+                        <local:MyButton x:Name="BtnRubbishClear" MinWidth="140" Text="垃圾清理" Padding="13,0" Height="35"/>
+                    </StackPanel>
+                </StackPanel>
+            </local:MyCard>
+        </StackPanel>
     </local:MyScrollViewer>
 </local:MyPageRight>

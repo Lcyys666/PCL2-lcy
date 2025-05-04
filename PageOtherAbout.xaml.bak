@@ -1,0 +1,402 @@
+﻿<local:MyPageRight
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:PCL" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" x:Class="PageOtherAbout"
+    PanScroll="{Binding ElementName=PanBack}" RenderOptions.BitmapScalingMode="LowQuality">
+    <local:MyScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" x:Name="PanBack">
+        <StackPanel x:Name="PanMain" Margin="25,10" Grid.IsSharedSizeScope="True">
+            <local:MyCard Margin="0,15" Title="鍏充簬">
+                <Grid Margin="21,40,21,16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="150" />
+                    </Grid.ColumnDefinitions>
+                    <local:MyListItem IsHitTestVisible="False" Title="榫欒吘鐚穬" Margin="-5,0,15,0" Info="Plain Craft Launcher 鐨勪綔鑰咃紒" Grid.Row="0" Grid.Column="1" />
+                    <local:MyListItem IsHitTestVisible="False" Title="Plain Craft Launcher 2" Margin="-5,0,15,0" Info="褰撳墠鐗堟湰鍩轰簬鍘熺増%VERSION%锛?VERSIONCODE%.%BRANCH%锛? Grid.Row="1" Grid.Column="1" x:Name="ItemAboutPcl" />
+                    <Image Source="/Plain Craft Launcher 2;component/Images/Heads/Logo.png" Grid.Row="1" Margin="3">
+                        <Image.Clip>
+                            <EllipseGeometry Center="17 17" RadiusX="17" RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
+                    <Image Source="/Plain Craft Launcher 2;component/Images/Heads/LTCat.jpg" Grid.Row="0" Margin="3">
+                        <Image.Clip>
+                            <EllipseGeometry Center="17 17" RadiusX="17" RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
+                    <local:MyButton Text="璧炲姪浣滆€? Grid.Column="2" Grid.Row="0" Height="35" EventType="鎵撳紑缃戦〉" EventData="https://afdian.com/a/LTCat" />
+                    <local:MyButton Text="鏌ョ湅婧愪唬鐮? Grid.Column="2" Grid.Row="1" Height="35" EventType="鎵撳紑缃戦〉" EventData="https://github.com/Lcyys666/PCL2-lcy" />
+                </Grid>
+            </local:MyCard>
+            <local:MyCard Margin="0,0,0,15" Title="鐗瑰埆楦ｈ阿">
+                <Grid Margin="21,40,21,16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="150" />
+                    </Grid.ColumnDefinitions>
+                    <local:MyListItem Title="bangbang93" Margin="-5,0,15,0" IsHitTestVisible="False" Info="鎻愪緵 BMCLAPI 闀滃儚婧愬拰 Forge 瀹夎宸ュ叿锛岃瑙?https://bmclapi.bangbang93.com" Grid.Row="0" Grid.Column="1" />
+                    <local:MyButton x:Name="BtnAboutBmclapi" Text="璧炲姪闀滃儚婧? Grid.Row="0" Grid.Column="2" Height="35" />
+                    <local:MyListItem Title="MC 鐧剧" Margin="-5,0,0,0" IsHitTestVisible="False" Grid.ColumnSpan="2" Info="鎻愪緵浜?Mod 鍚嶇О鐨勪腑鏂囩炕璇戝拰鏇村鐩稿叧淇℃伅锛? Grid.Row="1" Grid.Column="1" />
+                    <local:MyButton x:Name="BtnAboutWiki" Text="鎵撳紑鐧剧" Grid.Row="1" Grid.Column="2" Height="35" />
+                    <local:MyListItem Title="00ll00" Margin="-5,0,0,0" IsHitTestVisible="False" Grid.ColumnSpan="2" Info="鎻愪緵浜?Java Launch Wrapper 鍜屼竴浜涢噸瑕佹湇鍔℃敮鎸侊紒" Grid.Row="2" Grid.Column="1" />
+                    <local:MyListItem Title="z0z0r4" Margin="-5,0,0,0" IsHitTestVisible="False" Grid.ColumnSpan="2" Info="鎻愪緵浜?MCIM 涓浗 Mod 涓嬭浇闀滃儚婧愬拰甯姪搴撳浘搴婏紒" Grid.Row="3" Grid.Column="1" />
+                    <local:MyListItem Title="Patrick" Margin="-5,0,0,0" IsHitTestVisible="False" Grid.ColumnSpan="2" Info="璁捐骞跺埗浣滀簡 PCL 鍥炬爣锛岃鎴戜粠鍋氬浘鏍囩殑姘存繁鐏儹涓緱鍒颁簡瑙ｈ劚鈥︹€? Grid.Row="4" Grid.Column="1" />
+                    <local:MyListItem Title="Hao_Tian" Margin="-5,0,0,0" IsHitTestVisible="False" Grid.ColumnSpan="2" Info="鍦ㄥ唴娴嬩腑鎵惧嚭浜嗕竴澶у爢娌′汉鎯冲緱鍒扮殑璇″紓 Bug锛屾湁闈炲悓瀵诲父鐨?Bug 浣撹川" Grid.Row="5" Grid.Column="1" />
+                    <local:MyListItem Title="Minecraft 涓枃璁哄潧" Margin="-5,0,15,0" IsHitTestVisible="False" Info="铏界劧宸茬粡鍏崇珯浜嗭紝浣嗘劅璋㈡鍓嶆彁渚涗簡 MCBBS 闀滃儚婧愨€︹€? Grid.Row="6" Grid.Column="1" />
+                    <local:MyListItem Title="PCL 鍐呯兢鐨勫悇浣? Margin="-5,0,0,0" IsHitTestVisible="False" Grid.ColumnSpan="2" Info="鎰熻阿鍐呯兢鐨勬矙闆曠綉鍙嬩滑杩欎箞涔呬互鏉ュ鎴戝拰 PCL 鐨勬敮鎸佷笌榧撳姳锛? Grid.Row="7" Grid.Column="1" />
+                    <Image Source="/Plain Craft Launcher 2;component/Images/Heads/bangbang93.png" Grid.Row="0" Margin="3">
+                        <Image.Clip>
+                            <EllipseGeometry Center="17 17" RadiusX="17" RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
+                    <Image Source="/Plain Craft Launcher 2;component/Images/Heads/wiki.png" Grid.Row="1" Margin="3">
+                        <Image.Clip>
+                            <EllipseGeometry Center="17 17" RadiusX="17" RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
+                    <Image Source="/Plain Craft Launcher 2;component/Images/Heads/00ll00.png" Grid.Row="2" Margin="3">
+                        <Image.Clip>
+                            <EllipseGeometry Center="17 17" RadiusX="17" RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
+                    <Image Source="/Plain Craft Launcher 2;component/Images/Heads/z0z0r4.png" Grid.Row="3" Margin="3">
+                        <Image.Clip>
+                            <EllipseGeometry Center="17 17" RadiusX="17" RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
+                    <Image Source="/Plain Craft Launcher 2;component/Images/Heads/Patrick.png" Grid.Row="4" Margin="3">
+                        <Image.Clip>
+                            <EllipseGeometry Center="17 17" RadiusX="17" RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
+                    <Image Source="/Plain Craft Launcher 2;component/Images/Heads/Hao_Tian.jpg" Grid.Row="5" Margin="3">
+                        <Image.Clip>
+                            <EllipseGeometry Center="17 17" RadiusX="17" RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
+                    <Image Source="/Plain Craft Launcher 2;component/Images/Heads/MCBBS.png" Grid.Row="6" Margin="3">
+                        <Image.Clip>
+                            <EllipseGeometry Center="17 17" RadiusX="17" RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
+                    <Image Source="/Plain Craft Launcher 2;component/Images/Heads/PCL2.png" Grid.Row="7" Margin="3">
+                        <Image.Clip>
+                            <EllipseGeometry Center="17 17" RadiusX="17" RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
+                </Grid>
+            </local:MyCard>
+            <local:MyCard Margin="0,0,0,15" Title="璧炲姪鑰?>
+                <StackPanel Margin="25,40,10,20">
+                    <TextBlock HorizontalAlignment="Left" Text="浠ヤ笅鏄?2025 骞?3 鏈堢殑楂樼骇璧炲姪鑰呬滑锛佹劅璋㈠悇浣嶅 PCL 鍜屼紵澶х殑鍜曞挄鍜曚簨涓氱殑鏀寔锛? Margin="0,0,25,5.5" TextTrimming="None" TextWrapping="WrapWithOverflow" />
+                    <WrapPanel Margin="0,0,0,10">
+                        <TextBlock Width="120" Margin="0,1.5" Text="micheal276" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鍚冮潰涓嶅姞钁? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鎯冲幓鐪嬮偅鍊掓偓灞? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="闅充箣鐙? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="QY鐔瑰井" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="LZL" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鑰佸崱璐? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏁?" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="缁瑱_xusheng" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="HappyGhast0123" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Tong" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="15158206433" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="涓€鎶硅摑鑹插拰绮夎壊" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="UcFB" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鍝? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="T2222" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Toudesu" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鑻忓埄" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="DW." />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鎶涙姏涓嶆槸娉℃场" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏃犲悕灏忓崚" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="lgl" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="mk" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="椴ㄩ奔涓嶆槸楸? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Momizi_Azusa" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="oseki" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="绮?鍗?澶?" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏈＋鐨勯粦鐚? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="theagin" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐙楁潪銈忔灨瀛? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鍒嚩涓嶄簩鍟? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏋彾钀芥睙" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Tianwai鏉ョ墿" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="濡傞FC" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="fan" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="闆ㄦ亱鑺虫瓕" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="neko" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="闄屼笂浜戞毊杩熻繜褰? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="121" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="SGYH" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Lelouch" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="tisky" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="绂归" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="MoYou" />
+                        <TextBlock Width="240" Margin="0,1.5" Text="?HONEY HONEY BOOM?" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="娴侀洩鏃犵棔" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="yourenA" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="褰撳綊涓庤湝绯? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鎻愮摝鐗瑰お淇? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="weidao-浜戝ぉ" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Yangxl" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="zero" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="guoomg" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="瀛ゅ康楝辨捣" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏉庢櫒鏇? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="dyh" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="didibubu" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="way_" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="娴呭啣" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="LightTeaHear" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="kiki" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="娲涘北闃? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏈堜笅鐙厡" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="闃挎櫞" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="璁虹尗鐨勬恫浣撳彲鑳芥€? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="寰皵涓剁櫧鎶? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="瓒呭嚒澶ц氨绯? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="楹诲湥" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鍏疂楗? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="寮犱笉鏄? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="1" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏈沇ang" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="alrin" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏃犲績鎬? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="MelonEater88" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐧芥棩姊? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="FEssyyzplane" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏈崪閾庡境鍕? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏄熸渤" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鑰佺帇1233" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐜嬬瓑绛夌瓑" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="姗樺瓙233" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="wyhll" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="SiMen_774" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Klcos" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="pepsi" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="FORGE" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏉庨潚鍥? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Zmr2333" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="CWKF" />
+                        <TextBlock Width="240" Margin="0,1.5" Text="鍏滃附浜篹vei622130" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="姣掑ザ绁炴帰濂? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="璧よ瘹涔嬪績" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="钘忕櫧" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏌愰浂瀛? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="WJMAS" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="楠ㄥご" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Starying" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="閽卞皬绌? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="casper" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Summer涓跨殦鏈? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="灏忎績" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="寰″潅缇庣惔" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="闂茬殑娌′簨骞插暐鍛? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="aiyu" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="shuaitiao" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="灏忕湡瀵? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="娓呯椋? />
+                        <TextBlock Width="240" Margin="0,1.5" Text="FateIsYetUncertain" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Olympia" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="姗樺鏈涗節" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏈ㄦ兜" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="2147483647" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="YJ-StarBlock" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="娆蹭簣鍗? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="haolanne" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="娴呭" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="MCxiaobai" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏈煡鏁皒閰? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏈変簨鎵撻挶" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Setsuna" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐢佃剳" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="mpty" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="灏忓厰鍣楀櫁" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="瓒呯骇鐧界緤澶х帇" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="濂堝" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="12345" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="fshj" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Langfeige" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鑱嗛宀卞渤" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Fier" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="寮犳€€姘? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="minecraftmc22" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐖辫箞鐞瓙" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="浣曞績鎱? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐫忔" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐔欓噷绯婃秱" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="钀藉彾" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="闃垮潕灏斿痉" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏉滈噹鍑涗笘" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鍛嗗憜" />
+                        <TextBlock Width="240" Margin="0,1.5" Text="鎴戝拰鐞冲Ξ鐗规湁涓瀛? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Fishking_qwe" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鎯犳儬" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="榛戞殫椋庢毚" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Oxsheep" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Clove_Cloud" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="浠娿伅鏈€楂? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="YuiuY" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="George0307" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="娓稿瓙妗€" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐜勪箣" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="娴风坏瀹濆疂浣庨『閽? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏉滃厛鐢? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="榛戠伀c" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="钀芥棩浣欓煶" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="mojanng_" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鑱夸笍" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="ClarkeTAT" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="涓滄柟娴呮祬" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐜媄EAN" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="ayu" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏃犳墍鐣忔儳鍐峰湀浜? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="棣ㄨ粺" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐧藉姞榛? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="姊﹀涔嬩腑" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="闈掓灊鏈涙湀" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="m1nato__" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="dingwenbo" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="娉曡€? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鍜屽崄濂? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="give" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鎴戞槸鍙潰鍖呯尗" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏌掑畨" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="YUU" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鏈堜笅鍒濇嫢" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐧藉彾澶曠" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="閰稿ザ鐐搁奔" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鐏靛柣" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="_鏆湱" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="TylerDeng" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="鎴戜笉鍦ㄧ嚎" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Hugh" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Qiyue" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="CHAKKS" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="Silver_1572" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="WIFTAB" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="hmal" />
+                        <TextBlock Width="120" Margin="0,1.5" Text="閫氬ぇ灏忓寮? />
+                        <TextBlock Width="120" Margin="0,1.5" Text="htenet" />
+                    </WrapPanel>
+                    <Grid Height="35">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Button" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Button" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Button" />
+                        </Grid.ColumnDefinitions>
+                        <local:MyButton x:Name="BtnDonateOutput" Grid.Column="0" MinWidth="140" Text="鐢熸垚瑙ｉ攣鐮? Padding="13,0" Margin="0,0,20,0" HorizontalAlignment="Left" ColorType="Highlight" Visibility="Collapsed" />
+                        <local:MyButton x:Name="BtnDonateDonate" Grid.Column="0" MinWidth="140" Text="璧炲姪浣滆€? Padding="13,0" Margin="0,0,20,0" HorizontalAlignment="Left" ColorType="Highlight" EventType="鎵撳紑缃戦〉" EventData="https://afdian.com/a/LTCat" />
+                        <local:MyButton x:Name="BtnDonateCopy" Grid.Column="1" MinWidth="140" Text="澶嶅埗璇嗗埆鐮? Padding="13,0" Margin="0,0,20,0" HorizontalAlignment="Left" />
+                        <local:MyButton x:Name="BtnDonateInput" Grid.Column="2" MinWidth="140" Text="杈撳叆瑙ｉ攣鐮? Padding="13,0" Margin="0,0,20,0" HorizontalAlignment="Left" />
+                    </Grid>
+                </StackPanel>
+            </local:MyCard>
+            <local:MyCard Margin="0,0,0,15" Title="娉曞緥淇℃伅" IsSwaped="True" CanSwap="True">
+                <StackPanel Margin="25,39,23,20">
+                    <TextBlock Text="闅愮璇存槑" TextWrapping="Wrap" Margin="0,6,0,4" FontWeight="Bold" />
+                    <TextBlock Margin="0,0,0,2" LineHeight="17" Text="鏈蒋浠剁殑 User Agent 涓寘鍚惎鍔ㄥ櫒鐨勭増鏈彿锛屼互缁熻鍚勭増鏈殑鐢ㄦ埛鏁伴噺銆?#13;闄ゆ涔嬪锛屾湰杞欢涓嶄細鍚戝紑鍙戣€呬笂浼犱换浣曞叾浠栦俊鎭€? TextWrapping="Wrap" />
+                    <TextBlock Text="鍏朵粬淇℃伅" TextWrapping="Wrap" Margin="0,12,0,4" FontWeight="Bold" />
+                    <TextBlock Margin="0,0,0,2" LineHeight="17" Text="Copyright 漏 榫欒吘鐚穬 2016. All Rights Reserved.&#13;璁＄畻鏈鸿蒋浠惰憲浣滄潈鐧昏鍙凤細2020SR0875133&#13;杩濇硶杩濊琛屼负涓炬姤鎶曡瘔閭锛歨exdragon@vip.qq.com&#13;闈?MINECRAFT 瀹樻柟浜у搧銆傛湭缁?MOJANG 鎴?MICROSOFT 鎵瑰噯锛屼篃涓嶄笌 MOJANG 鎴?MICROSOFT 鍏宠仈銆? TextWrapping="Wrap" />
+                    <StackPanel Orientation="Horizontal" Height="35" HorizontalAlignment="Left" Margin="0,12,0,0">
+                        <local:MyButton Text="鐢ㄦ埛鍗忚涓庡厤璐ｅ０鏄? Width="170" Padding="13,0" Margin="0,0,20,0" ColorType="Highlight" EventType="鎵撳紑缃戦〉" EventData="https://shimo.im/docs/rGrd8pY8xWkt6ryW" />
+                        <local:MyButton Text="寮€婧愪唬鐮? Width="140" Padding="13,0" EventType="鎵撳紑缃戦〉" EventData="https://github.com/Hex-Dragon/PCL2" />
+                    </StackPanel>
+                </StackPanel>
+            </local:MyCard>
+            <local:MyCard Margin="0,0,0,15" Title="璁稿彲涓庣増鏉冨０鏄? IsSwaped="True" CanSwap="True">
+                <Grid Margin="25,42,23,4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Java Launch Wrapper" TextWrapping="Wrap" FontWeight="Bold" />
+                    <TextBlock Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Text="Copyright 漏 2022 00ll00&#xa;Licensed under the MIT License." TextWrapping="Wrap" />
+                    <local:MyButton Grid.Row="1" Grid.Column="2" MinWidth="140" Text="鏌ョ湅鏉ユ簮缃戠珯" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://github.com/00ll00/java_launch_wrapper" />
+                    <local:MyButton Grid.Row="1" Grid.Column="3" MinWidth="140" Text="鏌ョ湅璁稿彲鏂囨。" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://github.com/00ll00/java_launch_wrapper?tab=MIT-1-ov-file#readme" />
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Newtonsoft.Json" TextWrapping="Wrap" FontWeight="Bold" />
+                    <TextBlock Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Text="Copyright 漏 2007 James Newton-King&#xa;Licensed under the MIT License." TextWrapping="Wrap" />
+                    <local:MyButton Grid.Row="3" Grid.Column="2" MinWidth="140" Text="鏌ョ湅鏉ユ簮缃戠珯" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://www.newtonsoft.com/json" />
+                    <local:MyButton Grid.Row="3" Grid.Column="3" MinWidth="140" Text="鏌ョ湅璁稿彲鏂囨。" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://opensource.org/licenses/MIT" />
+                    
+                    <TextBlock Grid.Row="4" Grid.Column="0" Text="NAudio" TextWrapping="Wrap" FontWeight="Bold" />
+                    <TextBlock Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Text="Copyright 漏 2015 Mark Heath (mark.heath@gmail.com)&#xa;Licensed under the MIT License." TextWrapping="Wrap" />
+                    <local:MyButton Grid.Row="5" Grid.Column="2" MinWidth="140" Text="鏌ョ湅鏉ユ簮缃戠珯" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://github.com/naudio/NAudio" />
+                    <local:MyButton Grid.Row="5" Grid.Column="3" MinWidth="140" Text="鏌ョ湅璁稿彲鏂囨。" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left" 
+                                    EventType="鎵撳紑缃戦〉" EventData="https://github.com/naudio/NAudio/blob/master/license.txt" />
+                    
+                    <TextBlock Grid.Row="6" Grid.Column="0" Text="Ookii.Dialogs" TextWrapping="Wrap" FontWeight="Bold" />
+                    <TextBlock Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Text="Copyright 漏 2009 Sven Groot (Ookii.org)" TextWrapping="Wrap" />
+                    <local:MyButton Grid.Row="7" Grid.Column="2" MinWidth="140" Text="鏌ョ湅鏉ユ簮缃戠珯" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://www.ookii.org/Software/Dialogs/" />
+                    <local:MyButton Grid.Row="7" Grid.Column="3" MinWidth="140" Text="鏌ョ湅璁稿彲鏂囨。" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://github.com/caioproiete/ookii-dialogs-wpf/blob/master/LICENSE" />
+                    
+                    <TextBlock Grid.Row="8" Grid.Column="0" Text="Iconmonstr" TextWrapping="Wrap" FontWeight="Bold" />
+                    <TextBlock Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" Text="Copyright 漏 2019 iconmonstr (Alexander Kahlkopf)" TextWrapping="Wrap" />
+                    <local:MyButton Grid.Row="9" Grid.Column="2" MinWidth="140" Text="鏌ョ湅鏉ユ簮缃戠珯" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://iconmonstr.com/" />
+                    <local:MyButton Grid.Row="9" Grid.Column="3" MinWidth="140" Text="鏌ョ湅璁稿彲鏂囨。" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://iconmonstr.com/license/" />
+                    
+                    <TextBlock Grid.Row="10" Grid.Column="0" Text="libwebp wrapper for .NET" TextWrapping="Wrap" FontWeight="Bold" />
+                    <TextBlock Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="2" Text="Copyright 漏 2012 Imazen&#xa;Licensed under the MIT License." TextWrapping="Wrap" />
+                    <local:MyButton Grid.Row="11" Grid.Column="2" MinWidth="140" Text="鏌ョ湅鏉ユ簮缃戠珯" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://github.com/imazen/libwebp-net" />
+                    <local:MyButton Grid.Row="11" Grid.Column="3" MinWidth="140" Text="鏌ョ湅璁稿彲鏂囨。" Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://github.com/imazen/libwebp-net/blob/master/LICENSE.txt" />
+
+                    <TextBlock Grid.Row="12" Grid.Column="0" Text="Iconfont" TextWrapping="Wrap" FontWeight="Bold" />
+                    <TextBlock Grid.Row="12" Grid.Column="2" Grid.ColumnSpan="2" Text="Copyright 漏 ALIMAMA MUX, powered by alimama THX." TextWrapping="Wrap" />
+                    <local:MyButton Grid.Row="13" Grid.Column="2" MinWidth="140" Text="鏌ョ湅鍘熺綉绔? Padding="13,0" Margin="0,7,20,18" HorizontalAlignment="Left"
+                                    EventType="鎵撳紑缃戦〉" EventData="https://www.iconfont.cn/" />
+
+                </Grid>
+            </local:MyCard>
+        </StackPanel>
+    </local:MyScrollViewer>
+</local:MyPageRight>
+

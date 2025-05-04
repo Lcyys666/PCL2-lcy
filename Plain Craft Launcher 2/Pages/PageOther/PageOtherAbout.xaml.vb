@@ -24,10 +24,10 @@
     Private Sub BtnAboutWiki_Click(sender As Object, e As EventArgs) Handles BtnAboutWiki.Click
         OpenWebsite("https://www.mcmod.cn")
     End Sub
-    Public Shared Sub CopyUniqueAddress() Handles BtnDonateCopy.Click
+    Public Shared Sub CopyUniqueAddress()
         ClipboardSet(UniqueAddress)
     End Sub
-    Private Sub BtnDonateCodeInput_Click() Handles BtnDonateInput.Click
+    Private Sub BtnDonateCodeInput_Click()
         DonateCodeInput()
     End Sub
 

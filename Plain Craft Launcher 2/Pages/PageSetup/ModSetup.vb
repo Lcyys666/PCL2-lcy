@@ -637,7 +637,10 @@
                 End If
             Case 1 '默认
                 FrmMain.ShapeTitleLogo.Visibility = Visibility.Visible
-                FrmMain.LabTitleLogo.Visibility = Visibility.Collapsed
+                FrmMain.LabTitleLogo.Visibility = Visibility.Visible
+                FrmMain.LabTitleLogo.Text = "LCY"
+                FrmMain.LabTitleLogo.Margin = New Thickness(90, 0, 0, 0)
+                FrmMain.LabTitleLogo.FontSize = 14
                 FrmMain.ImageTitleLogo.Visibility = Visibility.Collapsed
                 If Not IsNothing(FrmSetupUI) Then
                     FrmSetupUI.CheckLogoLeft.Visibility = Visibility.Collapsed

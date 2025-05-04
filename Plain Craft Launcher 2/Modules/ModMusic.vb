@@ -291,7 +291,10 @@
                 If Setup.Get("UiMusicVolume") <> PreviousVolume Then
                     '更新音量
                     PreviousVolume = Setup.Get("UiMusicVolume")
-                    CurrentWave.Volume = PreviousVolume / 1000
+                    ' 根据NAudio开发者建议，应在输入的WaveProvider上设置音量
+                    If TypeOf Reader Is NAudio.Wave.AudioFileReader Then
+                        DirectCast(Reader, NAudio.Wave.AudioFileReader).Volume = PreviousVolume / 1000
+                    End If
                 End If
                 '更新进度条
                 Dim Percent = Reader.CurrentTime.TotalMilliseconds / Reader.TotalTime.TotalMilliseconds

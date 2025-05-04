@@ -963,7 +963,7 @@
     <Resource Include="Images\Blocks\NeoForge.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Heads\z0z0r4.png" />
+    <Resource Include="Images\Heads\z0z0r4.png" />    <Resource Include="Images\Heads\Lcyys666.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imazen.WebP.dll" />
